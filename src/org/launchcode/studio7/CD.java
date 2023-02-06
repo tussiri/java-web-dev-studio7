@@ -10,7 +10,18 @@ public class CD extends BaseDisc implements OpticalDisc{
             System.out.println("Now Playing");
 
         }
+
+    @Override
+    public void spinDisc() {
+        System.out.println("The disc is spinning at 200-500 RPM.");
     }
+
+    @Override
+    public void readData(){
+        System.out.println("Would you like to play music?");
+    }
+
+}
 
     // TODO: Implement your custom interface.
 

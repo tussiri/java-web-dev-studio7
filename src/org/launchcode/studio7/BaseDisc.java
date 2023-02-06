@@ -7,6 +7,7 @@ private int spinDisc;
 private double storageCapacity;
 private String discType;
 private String name;
+private ArrayList<String> contents;
 
     public BaseDisc(int spinDisc, double storageCapacity, String discType, String name) {
         this.spinDisc = spinDisc;
@@ -14,12 +15,6 @@ private String name;
         this.discType = discType;
         this.name = name;
     }
-
-    @Override
-    public void spinDisc() {
-        System.out.println("The disc is spinning at " + spinDisc + " RPM.");
-    }
-
 
     @Override
     public void readableDisc() {
@@ -30,7 +25,7 @@ private String name;
     public String toString() {
         return "Disc Name: " + name +
                 "\nDisc Type: " + discType  +
-                "\nStorage Capacity: " + storageCapacity + "GB";
+                "\nStorage Capacity: " + storageCapacity+ "GB";
 
     }
 }
